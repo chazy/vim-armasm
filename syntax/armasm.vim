@@ -73,6 +73,7 @@ syn match armasmBuiltIn		"{NOSWST}"
 
 syn match armasmComment		";.*" contains=armasmTodo
 syn match armasmComment		"@.*" contains=armasmTodo
+syn match armasmComment		"//.*" contains=armasmTodo
 syn region armasmComment	matchgroup=armasmCommentStart start="/\*" end="\*/" contains=armasmTodo extend
 
 syn region armasmString		start=+"+ end=+"+ oneline
